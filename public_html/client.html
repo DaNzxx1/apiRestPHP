@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+        <script type="text/javascript">
+            var url = "http://localhost:7882/apiRestPHP/public_html/api/user";
+            
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                })
+                .catch(error => {
+                    console.log('ERROR: ' + error.message);
+                })
+
+        </script>
+    </body>
+</html>
